@@ -75,7 +75,8 @@ public final class MdModelLoader {
                     var obj = JsonParser.parseReader(new InputStreamReader(resource.getInputStream())).getAsJsonObject();
                     return new PipeUnbakedModel(new ResourceLocation(GsonHelper.getAsString(obj, "connection_none")),
                             new ResourceLocation(GsonHelper.getAsString(obj, "connection_pipe")),
-                            new ResourceLocation(GsonHelper.getAsString(obj, "connection_inventory")));
+                            new ResourceLocation(GsonHelper.getAsString(obj, "connection_inventory")),
+                            new ResourceLocation(GsonHelper.getAsString(obj, "straight_line")));
                 } catch (IOException exception) {
                     throw new ModelProviderException("Failed to find pipe model json for pipe " + modelId, exception);
                 } catch (RuntimeException runtimeException) {
