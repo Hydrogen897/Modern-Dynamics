@@ -128,8 +128,9 @@ public class PipeBakedModel implements BakedModel, FabricBakedModel {
 
     private void drawPipe(PipeModelData data, RenderContext context) {
         int connectionsPipe = data.pipeConnections();
+        int connectionsInventory = data.inventoryConnections();
 
-        if (connectionsPipe == 3 || connectionsPipe == 12 || connectionsPipe == 48) {
+        if (connectionsInventory == 0 && (connectionsPipe == 3 || connectionsPipe == 12 || connectionsPipe == 48)) {
             // Straight line!
             if (connectionsPipe == 3) {
                 context.fallbackConsumer().accept(straightLine[0]);
@@ -139,7 +140,6 @@ public class PipeBakedModel implements BakedModel, FabricBakedModel {
                 context.fallbackConsumer().accept(straightLine[4]);
             }
         } else {
-            int connectionsInventory = data.inventoryConnections();
             connectionsPipe |= connectionsInventory;
             int connectionsNone = ~connectionsPipe;
 
