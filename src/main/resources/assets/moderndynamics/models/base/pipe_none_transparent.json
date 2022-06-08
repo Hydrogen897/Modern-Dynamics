@@ -1,22 +1,73 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by Azazelthedemonlord ~ https://azazelthedemonlord.newgrounds.com/ ~ ♡",
+	"texture_size": [32, 32],
 	"textures": {
 		"particle": "#0"
 	},
 	"elements": [
 		{
-			"from": [5, 5, 5],
-			"to": [11, 11, 11],
+			"name": "jacket",
+			"from": [4.5, 4.5, 4.5],
+			"to": [11.5, 11.5, 11.5],
 			"faces": {
-				"north": {"uv": [5, 5, 11, 11], "texture": "#0"}
+				"north": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"},
+				"east": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"},
+				"south": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"},
+				"west": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"},
+				"down": {"uv": [4.5, 4.5, 8, 8], "texture": "#0"}
 			}
 		},
 		{
-			"from": [5, 5, 4],
-			"to": [11, 11, 5],
+			"name": "rims",
+			"from": [10.5, 10.5, 11.5],
+			"to": [5.5, 5.5, 4.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"south": {"uv": [11, 5, 5, 11], "texture": "#0"}
+				"north": {"uv": [5, 5, 7.5, 7.5], "texture": "#0"},
+				"east": {"uv": [8, 5, 11.5, 7.5], "texture": "#0"},
+				"south": {"uv": [5, 5, 7.5, 7.5], "texture": "#0"},
+				"west": {"uv": [8, 5, 11.5, 7.5], "texture": "#0"},
+				"up": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"},
+				"down": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"}
 			}
+		},
+		{
+			"name": "rims",
+			"from": [11.5, 10.5, 10.5],
+			"to": [4.5, 5.5, 5.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 5, 11.5, 7.5], "texture": "#0"},
+				"east": {"uv": [5, 5, 7.5, 7.5], "texture": "#0"},
+				"south": {"uv": [8, 5, 11.5, 7.5], "texture": "#0"},
+				"west": {"uv": [5, 5, 7.5, 7.5], "texture": "#0"},
+				"up": {"uv": [8, 5, 11.5, 7.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8, 5, 11.5, 7.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "rims",
+			"from": [10.5, 11.5, 10.5],
+			"to": [5.5, 4.5, 5.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"},
+				"east": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"},
+				"south": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"},
+				"west": {"uv": [8.5, 4.5, 11, 8], "texture": "#0"},
+				"up": {"uv": [5, 5, 7.5, 7.5], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [5, 5, 7.5, 7.5], "rotation": 270, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		{
+			"name": "z inverses",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [1, 2, 3]
 		}
 	]
 }

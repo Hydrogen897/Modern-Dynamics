@@ -52,11 +52,11 @@
     "gui.moderndynamics.tooltip.upgrade_multiplyFluidTransfer": "Total Fluid Transfer: %s",
     "gui.moderndynamics.tooltip.upgrades_effects": "Upgrade Effects",
     "gui.moderndynamics.tooltip.upgrades_max": "Up to %s supported",
-    "item.moderndynamics.attractor": "Attractor",
+    "item.moderndynamics.attractor": "Attractor Module",
     "item.moderndynamics.debug_tool": "Debug Tool",
-    "item.moderndynamics.extractor": "Extractor",
-    "item.moderndynamics.filter": "Filter",
-    "item.moderndynamics.inhibitor": "Inhibitor",
+    "item.moderndynamics.extractor": "Extractor Module",
+    "item.moderndynamics.filter": "Filter Module",
+    "item.moderndynamics.inhibitor": "Inhibitor Module",
     "item.moderndynamics.wrench": "Wrench",
     "itemGroup.moderndynamics.moderndynamics": "Modern Dynamics"
 }
