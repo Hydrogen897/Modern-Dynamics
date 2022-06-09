@@ -35,7 +35,7 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.Direction;
 
 public class FluidPipeRendering {
-    private static final float PIPE_W = 6.0F / 16.0F;
+    private static final float PIPE_W = 5.0F / 16.0F;
     private static final float P0 = 0f;
     private static final float P1 = P0 + (1 - PIPE_W) / 2;
     private static final float P2 = 0.5f;

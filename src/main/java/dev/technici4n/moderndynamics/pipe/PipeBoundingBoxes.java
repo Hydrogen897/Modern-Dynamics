@@ -22,13 +22,13 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class PipeBoundingBoxes {
-    private static final double CORE_SIZE = 6.0 / 16;
+    private static final double CORE_SIZE = 7.0 / 16;
     private static final double CORE_START = (1 - CORE_SIZE) / 2;
     private static final double CORE_END = CORE_START + CORE_SIZE;
 
     public static final VoxelShape CORE_SHAPE = Shapes.box(CORE_START, CORE_START, CORE_START, CORE_END, CORE_END, CORE_END);
     public static final VoxelShape[] PIPE_CONNECTIONS = buildSideShapes(CORE_SIZE, CORE_START);
-    public static final VoxelShape[] CONNECTOR_SHAPES = buildSideShapes(8.0 / 16, 4.0 / 16);
+    public static final VoxelShape[] CONNECTOR_SHAPES = buildSideShapes(9.0 / 16, 3.0 / 16);
     public static final VoxelShape[] INVENTORY_CONNECTIONS = combinePiecewise(PIPE_CONNECTIONS, CONNECTOR_SHAPES);
 
     public static VoxelShape[] buildSideShapes(double connectorSide, double connectorDepth) {

@@ -78,10 +78,10 @@ public class RecipesProvider extends FabricRecipeProvider {
                 .pattern("mrm")
                 .pattern(" p ")
                 .define('h', Items.HOPPER)
-                .define('m', Items.IRON_INGOT)
+                .define('m', Items.GOLD_INGOT)
                 .define('r', Items.REDSTONE)
                 .define('p', Items.PAPER)
-                .unlockedBy("has_hopper", has(Items.HOPPER))
+                .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .save(exporter);
 
         ShapedRecipeBuilder.shaped(MdItems.FILTER, 1)
